@@ -1,0 +1,16 @@
+name: Private action user
+run-name: Using private action
+on: 
+  - push
+jobs:
+  Provate-action-demo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello-world-action-test
+      id: hello
+      uses: gwrereleng/hello-world-javascript-action@v1.1
+      with:
+        who-to-greet: 'Mona the Octocat'
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+
