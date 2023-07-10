@@ -1,5 +1,4 @@
 name: Private action user
-id: helloworldaction
 run-name: Using private action
 on: 
   - push
