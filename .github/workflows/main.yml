@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo ${{ inputs.get-name }}
-    - run: echo ${{ github.event.client_payload.get-name }}
+    - run: echo ${{ github.event.client_payload.inputs.get-name }}
 
 
